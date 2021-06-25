@@ -5,10 +5,12 @@ from classes.karaoke import Karaoke
 from classes.rooms import Rooms
 
 class TestKaraoke(unittest.TestCase):
-# Karaoke Bar Test setup, named and 2 rooms allocated in positional arguments
+
     def setUp(self):
         self.karaoke = Karaoke("The Thunder-Zsolt!")
-        self.room_1 = Rooms("90's")
+        self.room_count = Rooms(0)
+        
+
         
 
 # Test for bars name
@@ -17,8 +19,10 @@ class TestKaraoke(unittest.TestCase):
 
 # Test to add a room in the Karaoke bar
     def test_karaoke_can_add_rooms(self):
-        self.karaoke.add_room(self.room_1)
+        self.karaoke.add_room(self.test_karaoke_can_add_rooms)
         self.assertEqual(1, self.karaoke.room_count())
+
+        
 
 
 
