@@ -6,11 +6,11 @@ class Rooms:
         self.song_list = []
         
 # Test to check in and check out guests passed.
-    def check_in(self, guest):
+    def guest_check_in(self, guest):
         for guest in guest:
            self.guest_list.append(guest)
 
-    def check_out(self, guest):
+    def guest_check_out(self, guest):
         for guest in guest: 
            self.guest_list.append(guest)       
                 
